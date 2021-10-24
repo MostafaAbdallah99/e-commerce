@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:background="@color/red">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_menu"
+        android:src="@drawable/ic_menu3"
+        android:contentDescription="@string/todo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_supermarket"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+            android:id="@+id/num_product"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="9sp"
+            android:text="@string/zero"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/white_circle"
+            tools:ignore="RtlHardcoded,SmallSp" />
+    </FrameLayout>
+
+</androidx.appcompat.widget.Toolbar>
